@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintor Trinitat Vella</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Production Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #4f46e5;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl md:text-3xl font-bold text-indigo-800">Pintor Trinitat Vella</h1>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#sobre-mi" class="text-gray-700 hover:text-indigo-600 transition">Sobre Mi</a></li>
+                        <li><a href="#portafoli" class="text-gray-700 hover:text-indigo-600 transition">Portafoli</a></li>
+                        <li><a href="#serveis" class="text-gray-700 hover:text-indigo-600 transition">Serveis</a></li>
+                        <li><a href="#testimonis" class="text-gray-700 hover:text-indigo-600 transition">Testimonis</a></li>
+                        <li><a href="#contacte" class="text-gray-700 hover:text-indigo-600 transition">Contacte</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <section id="inici" class="py-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Benvingut a la meva pàgina web!</h2>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto">Descobreix el meu treball com a pintor a Trinitat Vella. Aquí trobaràs informació sobre els meus serveis i el meu portafoli d'obres.</p>
+            <a href="#contacte" class="mt-8 inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Contacta'm</a>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Sobre Mi</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pintor treballant" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">La meva passió per la pintura</h3>
+                    <p class="text-gray-600 mb-4">Sóc un pintor professional amb més de 15 anys d'experiència a Trinitat Vella. La meva passió per l'art i la pintura em va portar a dedicar-me professionalment a aquest món.</p>
+                    <p class="text-gray-600 mb-4">He treballat en nombrosos projectes tant residencials com comercials, sempre buscant la màxima qualitat i satisfacció del client.</p>
+                    <p class="text-gray-600">Cada projecte és únic i m'encanta treballar estretament amb els meus clients per entendre les seves necessitats i crear espais bonics i funcionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafoli" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Portafoli</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Projecte 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Habitatge a Trinitat Vella</h3>
+                        <p class="text-gray-600">Pintura completa d'un habitatge de 90m² amb colors neutres i acabat mat.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1583845112209-e6e0ef8a7e25?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Projecte 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Local comercial</h3>
+                        <p class="text-gray-600">Reforma i pintura d'un local comercial al centre de Barcelona.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Projecte 3" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Restauració de façana</h3>
+                        <p class="text-gray-600">Restauració i pintura d'una façana històrica al barri de Gràcia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="serveis" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Serveis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-paint-roller text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Pintura d'interiors</h3>
+                    <p class="text-gray-600">Pintura de parets, sostres i fusteria amb els millors materials i acabat professional.</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-building text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Pintura d'exteriors</h3>
+                    <p class="text-gray-600">Pintura i tractament de façanes, terrasses i elements exteriors resistents a les inclemències.</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-brush text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Restauració</h3>
+                    <p class="text-gray-600">Restauració i tractament de superfícies antigues o danyades per recuperar el seu aspecte original.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonis" class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Testimonis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"El pintor va fer un treball excel·lent a casa meva. Va ser molt professional, puntual i el resultat final va superar les meves expectatives."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Client 1" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Maria G.</h4>
+                            <p class="text-sm text-gray-500">Trinitat Vella</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Vaig contractar els seus serveis per pintar el meu local i vaig quedar molt satisfet. Treball net, acurat i amb un bon tracte personal."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 2" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Josep L.</h4>
+                            <p class="text-sm text-gray-500">Barcelona</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacte" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Contacte</h2>
+            <div class="max-w-4xl mx-auto">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="nom" class="block text-gray-700 mb-2">Nom</label>
+                        <input type="text" id="nom" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="assumpte" class="block text-gray-700 mb-2">Assumpte</label>
+                        <input type="text" id="assumpte" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="missatge" class="block text-gray-700 mb-2">Missatge</label>
+                        <textarea id="missatge" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                    </div>
+                    <div class="md:col-span-2">
+                        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Enviar missatge</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Adreça</h3>
+                    <p class="text-gray-600">Trinitat Vella, Barcelona</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-phone-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Telèfon</h3>
+                    <p class="text-gray-600">+34 123 456 789</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Email</h3>
+                    <p class="text-gray-600">info@pintortrinitatvella.cat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold">Pintor Trinitat Vella</h2>
+                    <p class="text-gray-400">Pintura professional des de 2008</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 text-sm">
+                <p>© 2023 Pintor Trinitat Vella. Tots els drets reservats.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
